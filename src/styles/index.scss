@@ -1,0 +1,70 @@
+/* INDEX SCSS STYLE / Projet final PWA / Franck Gallard / dernière mise à jour: 27.09.2020 */
+
+/* Imports -------- */
+
+@import "~bootstrap/scss/bootstrap";
+@import "shared.scss";
+@import "style.css";
+@import "responsive.css";
+
+/* Fonts -------- */
+
+/* Variables -------- */
+
+$font-stack: "Open Sans", sans-serif;
+$h2: 2rem;
+$h2Pages: 3rem;
+$pt: 0;
+$titleTop: 10%;
+$sliderItemHeight: 93vh;
+$slidInHeight: 35vh;
+$widthH2: 16.25rem;
+$IndicLiHeight: 0.8rem;
+$IndicLiWidth: 0.8rem;
+$IndicatorsPB: 5%;
+$IndicatorsRadius: 100%;
+$topCaptionTitle: 43%;
+$fontSizeH2: 2.125rem;
+$lineHeight: 2.325rem;
+$h2Slider: 4.3rem;
+
+
+body {
+    margin: 0;
+    font-family: $font-stack;
+    background-color: white !important;
+
+    
+    /* **************** GENERAL **************** */
+
+    h1, h2, h3 {
+        
+    }
+
+    h2 {
+        font-size: $h2Pages;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .bg-hr {
+        background-color: $bg-hr;
+    }
+   
+
+    /* Include Medias Queries -------- */
+
+
+
+    /* **************** FOOTER **************** */
+
+    footer {
+        padding: 3rem;
+
+        .copyRight {
+            color: $copyrightColor;
+        }
+    }
+}

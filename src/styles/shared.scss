@@ -1,0 +1,35 @@
+/* Variables -------- */
+
+$yellow: #ffd121;
+$green: #0ede1b;
+$black: #212121;
+$gray_special: rgba(255, 255, 255, 0.5);
+$black: #808080;
+$gray_dark: #343a40;
+$gray_white: #f5f5f5;
+$gradient: linear-gradient(to right, #ffd121, #0ede1b);
+$border: 0.0625rem solid #0ede1b;
+$bg-hr: #6f7a86;
+$copyrightColor:#b7b7b7;
+
+.green_color {
+    color: $green;
+}
+
+.yellow_color {
+    color: $yellow;
+}
+
+.gray_white_color {
+    color: $gray_white;
+}
+
+.background_grey_dark_color {
+    background-color: $gray_dark;
+}
+
+.background_gradient {
+    background: $gradient;
+}
+
+
