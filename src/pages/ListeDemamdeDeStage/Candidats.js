@@ -3,7 +3,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 
 import Header from "../../components/Header";
 import OfferCard from "../../components/OfferCard";
-import AppelActionDemandeDeStage from "../../components/AppelActionDemandeDeStage";
+import AppelActionOffreStage from "../../components/AppelActionOffreStage";
 import jobs from "../../data/jobs";
 
 const jobOfferList = (jobs, type) => {
@@ -58,7 +58,7 @@ function Candidats() {
           </Container>
         </section>
         <section>
-          <AppelActionDemandeDeStage />
+          <AppelActionOffreStage />
         </section>
         <br />
         <br />
