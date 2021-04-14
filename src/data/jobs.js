@@ -2,6 +2,7 @@ const jobs = [
   {
     id: 1,
     titre: "Développeur Frontend",
+    nom: "Kustom Sportswear",
     type: "offre",
     secteurActivite: "Construction",
     ville: "Montreal",
@@ -34,6 +35,7 @@ const jobs = [
   {
     id: 2,
     titre: "Chargé(e) de projets web",
+    nom: "LEEROY",
     type: "offre",
     secteurActivite: "Finance et assurances",
     ville: "Sherbrooke",
@@ -65,6 +67,7 @@ const jobs = [
   {
     id: 3,
     titre: "Développeur .NET et SQL",
+    nom: "New look",
     type: "offre",
     secteurActivite: "Transport et entreposage",
     ville: "Montreal",
@@ -96,6 +99,7 @@ const jobs = [
   {
     id: 4,
     titre: "Développeur PHP",
+    nom: "Jean-Sébastien Tremblay",
     type: "demande",
     secteurActivite: "Service public",
     ville: "Montreal",
@@ -128,6 +132,7 @@ const jobs = [
   {
     id: 5,
     titre: "Chargé(e) de projets web",
+    nom: "Sydeny Bétancours",
     type: "demande",
     secteurActivite: "Finance et assurances",
     ville: "Ville de Québec",
@@ -159,6 +164,7 @@ const jobs = [
   {
     id: 6,
     titre: "Développeur Android",
+    nom: "Félix Gagné",
     type: "demande",
     secteurActivite: "Service public",
     ville: "Trois-Rivières",

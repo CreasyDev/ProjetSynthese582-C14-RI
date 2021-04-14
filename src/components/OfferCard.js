@@ -6,7 +6,7 @@ const OfferCard = ({ offer = undefined, type = "offre" }) => {
   if (offer.type === type) {
     return (
       <Card className="mt-4">
-        <Card.Body className="card">
+        <Card.Body className="card standard-card-style">
           <Card.Title className="">
             <strong>{offer.titre}</strong>
           </Card.Title>

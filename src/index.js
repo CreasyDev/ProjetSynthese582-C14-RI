@@ -4,6 +4,7 @@ import './index.css';
 import './styles/index.scss';
 import 'react-toastify/dist/ReactToastify.css';
 import App from './App';
+//import EspacePriveApp from './espacePrive/App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

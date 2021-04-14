@@ -30,13 +30,7 @@ a span {
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-.btn.extra-width {
-  padding: 13px 40px;
-}
-.btn:focus,
-.btn:active {
-  outline: inherit;
-}
+
 *,
 *:before,
 *:after {
@@ -251,11 +245,11 @@ Separator
 Button
 */
 
-.btn {
+/*.btn {
   padding: 11px 25px !important;
   font-size: 16px !important;
   font-weight: 400 !important;
-}
+}*/
 
 .input-lg,
 .form-group-lg .form-control {
@@ -265,15 +259,6 @@ Button
   font-size: 18px;
   line-height: 1.33;
   border-radius: 0;
-}
-.btn-lg,
-.btn-group-lg > .btn {
-  font-size: 18px;
-  line-height: 26px;
-  border-radius: 0;
-  background: #82ca9c;
-  border: 0;
-  padding: 10px 25px;
 }
 .input-group button a i {
   color: #fff;
@@ -347,39 +332,6 @@ Extra height css
 h1 span {
   color: #f56363;
   font-weight: 400;
-}
-
-/*for placeholder changes*/
-
-input::-webkit-input-placeholder {
-  color: #cacaca;
-  font-size: 12px;
-  padding-top: 2px;
-}
-input::-moz-placeholder {
-  color: #cacaca;
-  font-size: 12px;
-  padding-top: 2px;
-}
-input:-ms-input-placeholder {
-  color: #cacaca;
-  font-size: 12px;
-  padding-top: 2px;
-}
-textarea::-webkit-input-placeholder {
-  color: #cacaca;
-  font-size: 12px;
-  padding-top: 2px;
-}
-textarea::-moz-input-placeholder {
-  color: #cacaca;
-  font-size: 12px;
-  padding-top: 2px;
-}
-textarea::-ms-input-placeholder {
-  color: #cacaca;
-  font-size: 12px;
-  padding-top: 2px;
 }
 
 /*For  Global CSS*/
@@ -785,4 +737,250 @@ textarea::-ms-input-placeholder {
 
 .city {
   color: #757373;
+}
+
+/* debut de personnalisation des styles boostrap pour le site web */
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: medium !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #fff !important;
+}
+
+/* debut de personnalisation des boutton boostrap pour le site web */
+
+.card {
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  border-radius: 0 !important;
+}
+
+.btn {
+  border-radius: 0 !important;
+  font-weight: 700 !important;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+  padding: 0.25rem 1rem !important;
+}
+
+/* personnalisation des couleurs des bouttons boostrap pour le site web */
+
+.btn-info {
+  background-color: #397caf !important;
+  border-color: #397caf !important;
+}
+
+.btn-success {
+  background-color: #72a84b !important;
+  border-color: #72a84b !important;
+}
+
+.btn-danger {
+  background-color: #f16980 !important;
+  border-color: #f16980 !important;
+}
+
+.btn-outline-secondary {
+  color: #317caf !important;
+  border-color: #e2e2e2 !important;
+  border-radius: 0.2rem !important;
+}
+
+.btn-light {
+  border: 1px solid #ddd !important;
+}
+
+/* fin de personnalisation des styles boostrap pour le site web */
+
+/* styles pour l'espace interne de gestion */
+
+.full-content {
+  height: 100%;
+  position: fixed !important;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.side-menu {
+  background-color: #317caf;
+  left: 0;
+  width: 20%;
+}
+
+.top-menu {
+  background-color: #ffff;
+  right: 0;
+  height: 50px;
+  width: 80%;
+  padding-top: 8px;
+}
+
+.private-space-content-body {
+  background-color: #f9f9fb;
+  top: 50px;
+  right: 0;
+  width: 80%;
+}
+
+.private-space-container {
+  padding-bottom: 100px;
+  padding-top: 20px;
+}
+
+.internal-intership-request-card-container {
+  border-top: 3px solid #4a9bdf !important;
+}
+
+.internal-intership-offer-card-container {
+  border-top: 3px solid #a6ad43 !important;
+}
+
+.internal-intership-card-content {
+  background-color: #eaeff3 !important;
+  box-shadow: 0px 4px 2px -2px #dadada;
+}
+
+.internal-intership-card-content .city {
+  color: #000000;
+}
+
+.internal-intership-card-content .city label,
+.internal-intership-card-content .offer-owner label,
+.internal-intership-card-content .full-name label {
+}
+
+.internal-intership-card-content .full-name label {
+  color: #8c8d8d;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.intership-header-info {
+  border-bottom: 2px solid black;
+}
+
+.intership-header-info strong {
+  font-size: medium;
+  margin-left: 10px;
+}
+
+.espace-gestion-accueil-container .title {
+  margin-bottom: 25px;
+}
+
+.internal-intership-card-content .intership-description {
+  font-size: small;
+  margin-top: 5px;
+}
+
+.espace-gestion-accueil-container div .intership-request h6 {
+  margin-bottom: 10px;
+}
+
+.espace-gestion-accueil-container .title h4,
+.espace-gestion-accueil-container div .intership-request h6 {
+  font-weight: bold;
+}
+
+/* top menu styles */
+
+.user-infos-and-actions div div div div.user-name-role strong {
+  font-size: 10px;
+}
+
+.user-infos-and-actions div div div img {
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+}
+
+.user-infos-and-actions div div div div.user-name-role label {
+  display: block;
+  font-size: 8px;
+  font-weight: 700;
+  color: #bfc3d0;
+}
+
+.user-top-bar-infos .arrow-down-icon {
+  margin-top: 9px;
+  margin-left: 10px;
+  color: #bfc3d0;
+}
+
+/* liste des candidats styles */
+
+.utilisateur-card {
+  border: none !important;
+}
+
+.utilisateur-card div {
+  text-align: center;
+}
+
+.utilisateur-card div .nom-prenom {
+  font-size: small;
+}
+
+.utilisateur-card div .etablissement-scolaire,
+.utilisateur-card div .city {
+  font-size: small;
+  color: #4a9bdf;
+}
+
+.intership-header-info span {
+  font-size: 11px;
+}
+
+/* fiche du candidat style */
+
+.action-buttons {
+  border-bottom: 3px solid #4a9bdf !important;
+  overflow: auto;
+  padding-bottom: 15px;
+}
+
+.user-infos .user-name-title {
+  border-bottom: 1px solid;
+  margin-top: 10px;
+}
+
+.user-infos .user-name-title strong {
+  margin-left: 10px;
+}
+
+.user-infos-table {
+  margin-top: 15px;
+  background-color: #ffff;
+}
+
+/* modification fiche du candidat style */
+
+.modification-fiche-candidat-formulaire {
+  margin-top: 20px;
+}
+
+/* general styles */
+
+.display-flex-alignment {
+  display: flex;
+}
+
+.standard-card-style {
+  background-color: #f3f3f3 !important;
+}
+
+.display-block {
+  display: block !important;
+}
+
+.display-none {
+  display: none !important;
 }

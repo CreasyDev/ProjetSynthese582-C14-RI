@@ -7,10 +7,10 @@ import AppelActionOffreStage from "../../components/AppelActionOffreStage";
 import AppelActionDemandeDeStage from "../../components/AppelActionDemandeDeStage";
 import jobs from "../../data/jobs";
 
-const jobOfferList = (jobs, type) => {
+const ListeOffreDeStages = (jobs, type) => {
   return jobs.map((job) => {
     return (
-      <Col sm="12" md="4" className="">
+      <Col sm="12" md="12" className="">
         <OfferCard offer={job} type={type} />
       </Col>
     );
@@ -32,7 +32,7 @@ function Accueil() {
         </section>
         <section>
           <Container>
-            <Row>{jobOfferList(jobs)}</Row>
+            <Row>{ListeOffreDeStages(jobs)}</Row>
             <div className="button-section">
               <Button variant="danger" href="/offres-de-stage">
                 Voir toutes les offres de stage
@@ -52,7 +52,7 @@ function Accueil() {
         </section>
         <section>
           <Container>
-            <Row>{jobOfferList(jobs, "demande")}</Row>
+            <Row>{ListeOffreDeStages(jobs, "demande")}</Row>
             <div className="button-section">
               <Button variant="danger" href="/candidats">Voir toutes les demandes</Button>
             </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-
 import Header from "../../components/Header";
 import OfferCard from "../../components/OfferCard";
 import AppelActionOffreStage from "../../components/AppelActionOffreStage";
+import SecteursActivites from "../../components/SecteursActivites";
 import jobs from "../../data/jobs";
 
 const jobOfferList = (jobs, type) => {
@@ -34,25 +34,7 @@ function Candidats() {
               </Col>
               <Col sm="12" md="4" className="call-to-action">
                 <h2>Secteurs d'activité</h2>
-
-                <ul>
-                  <li>
-                    {" "}
-                    <a href="#">Administrations publiques</a>
-                  </li>
-                  <li>
-                    <a href="#">Agriculture, foresterie, pêche et chasse</a>
-                  </li>
-                  <li>
-                    <a href="#">Arts, spectacles et loisirs</a>
-                  </li>
-                  <li>
-                    <a href="#">Construction</a>
-                  </li>
-                  <li>
-                    <a href="#">Finance et assurances</a>
-                  </li>
-                </ul>
+                <SecteursActivites/>
               </Col>
             </Row>
           </Container>
