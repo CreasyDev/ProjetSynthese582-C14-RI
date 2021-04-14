@@ -71,7 +71,7 @@ class FicheCandidat extends React.Component {
         </div>
         <div className="action-buttons">
           <ButtonGroup className="mr-2 float-right">
-            <Button variant="light" className="mr-3" size="sm" href={`/espace-gestion/modifier-candidat/${utilisateur.id}`}>
+            <Button variant="light" className="mr-3" size="sm" href={`/espace-prive/modifier-candidat/${utilisateur.id}`}>
               <FontAwesomeIcon icon={faEdit} color="green" /> Modifier
             </Button>
             <Button variant="light" size="sm">

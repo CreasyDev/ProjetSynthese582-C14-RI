@@ -242,7 +242,7 @@ class ModificationFicheCandidat extends React.Component {
         </Form.Group>
         <div className="float-right">
           <ButtonGroup size="sm" className="card-button">
-            <Button variant="light" className="mr-2" href={`/espace-gestion/fiche-candidat/${ficheCandidatId}`}>
+            <Button variant="light" className="mr-2" href={`/espace-prive/fiche-candidat/${ficheCandidatId}`}>
               Annuler
             </Button>
             <Button variant="info" type="submit" onClick={this.handleSubmit}>
@@ -264,7 +264,7 @@ class ModificationFicheCandidat extends React.Component {
   }
 
   render() {
-    const lienRetour = `/espace-gestion/fiche-candidat/${this.state.ficheCandidatId}`;
+    const lienRetour = `/espace-prive/fiche-candidat/${this.state.ficheCandidatId}`;
     if (this.state.isUserUpdated) return <Redirect to={lienRetour} />;
     return this.renderContent();
   }

@@ -125,7 +125,7 @@ class Connexion extends React.Component {
   }
 
   render() {
-    if (this.state.isLogged) return <Redirect to="/" />;
+    if (this.state.isLogged) return <Redirect to="/espace-prive" />;
     return this.renderContent();
   }
 }

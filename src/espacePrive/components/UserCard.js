@@ -57,7 +57,7 @@ class UserCard extends React.Component {
                   variant="light"
                   className="mr-3"
                   size="sm"
-                  href={`/espace-gestion/${
+                  href={`/espace-prive/${
                     utilisateur.estUneEntreprise
                       ? "modifier-entreprise"
                       : "modifier-candidat"

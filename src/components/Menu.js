@@ -47,8 +47,8 @@ function Menu() {
               </Button>
             </Nav.Link>
             <Nav.Link href="#link">
-              <Button href="/espace-gestion/" variant="secondary">
-                Espace membre
+              <Button href="/espace-prive" variant="secondary">
+                Espace privé
               </Button>
             </Nav.Link>
           </Nav>

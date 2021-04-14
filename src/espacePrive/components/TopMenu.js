@@ -22,10 +22,10 @@ function TopMenu() {
         <Row>
           <Col sm="12" md="8" className="intership-request">
             <ButtonGroup className="mr-2 float-left">
-              <Button variant="outline-secondary" className="mr-3" size="sm" href="/espace-gestion/ajouter-une-offre-de-stage">
+              <Button variant="outline-secondary" className="mr-3" size="sm" href="/espace-prive/ajouter-une-offre-de-stage">
                 <FontAwesomeIcon icon={faPlus} /> Ajouter une offre de stage
               </Button>
-              <Button variant="outline-secondary" size="sm" href="/espace-gestion/ajouter-une-demande-de-stage">
+              <Button variant="outline-secondary" size="sm" href="/espace-prive/ajouter-une-demande-de-stage">
                 <FontAwesomeIcon icon={faPlus} /> Ajouter une demande de stage
               </Button>
             </ButtonGroup>

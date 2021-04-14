@@ -23,7 +23,7 @@ function PublicRouteManagement() {
           <Route path="/contact" component={Contact} />
           <Route path="/inscription" component={Inscription} />
           <Route path="/connexion" component={Connexion} />
-          <Route path="/espace-gestion/" component={EspacePriveApp} />
+          <Route path="/espace-prive" component={EspacePriveApp} />
         </Switch>
       </Router>
     </div>

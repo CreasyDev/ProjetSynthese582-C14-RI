@@ -16,17 +16,17 @@ function PrivateRouteManagement() {
     <div className="">
       <Router>
         <Switch>
-          <Route exact path="/espace-gestion" component={Accueil} />
-          <Route path="/espace-gestion/offres-de-stage" component={OffresDeStage} />
-          <Route path="/espace-gestion/ajouter-une-offre-de-stage" component={AjouterOffreDeStage} />
-          <Route path="/espace-gestion/demandes-de-stage" component={DemandesDeStage} />
-          <Route path="/espace-gestion/ajouter-une-demande-de-stage" component={AjouterDemandeDeStage} />
-          <Route path="/espace-gestion/candidats" component={Candidats} />
-          <Route path="/espace-gestion/fiche-candidat/:id" component={FicheCandidat} />
-          <Route path="/espace-gestion/modifier-candidat/:id" component={ModificationFicheCandidat} />
-          <Route path="/espace-gestion/modifier-entreprise/:id" component={ModificationFicheEntreprise} />
-          <Route path="/espace-gestion/entreprises" component={Entreprises} />
-          <Route path="/espace-gestion/deconnexion" component={Accueil} />
+          <Route exact path="/espace-prive" component={Accueil} />
+          <Route path="/espace-prive/offres-de-stage" component={OffresDeStage} />
+          <Route path="/espace-prive/ajouter-une-offre-de-stage" component={AjouterOffreDeStage} />
+          <Route path="/espace-prive/demandes-de-stage" component={DemandesDeStage} />
+          <Route path="/espace-prive/ajouter-une-demande-de-stage" component={AjouterDemandeDeStage} />
+          <Route path="/espace-prive/candidats" component={Candidats} />
+          <Route path="/espace-prive/fiche-candidat/:id" component={FicheCandidat} />
+          <Route path="/espace-prive/modifier-candidat/:id" component={ModificationFicheCandidat} />
+          <Route path="/espace-prive/modifier-entreprise/:id" component={ModificationFicheEntreprise} />
+          <Route path="/espace-prive/entreprises" component={Entreprises} />
+          <Route path="/espace-prive/deconnexion" component={Accueil} />
         </Switch>
       </Router>
     </div>
