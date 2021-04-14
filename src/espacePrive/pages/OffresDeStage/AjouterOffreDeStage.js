@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, ButtonGroup, Button, Form } from "react-bootstrap";
+import { Badge, ButtonGroup, Button, Form, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons";
 import FormInputFeedBackControl from "../../../components/FormInputFeedBackControl";
@@ -13,9 +13,7 @@ import { withRouter } from "react-router-dom";
 
 const renderSecteursActivites = () => {
   return secteursActivites.map((activite) => {
-    return (
-      <option value={activite.id}>{activite.titre}</option>
-    );
+    return <option value={activite.id}>{activite.titre}</option>;
   });
 };
 
@@ -135,9 +133,14 @@ class AjouterOffreDeStage extends React.Component {
       <>
         <div className="title">
           <h4>
-            Ajouter une offre de stage <FontAwesomeIcon icon={faLevelDownAlt} />
+            Formulaire d'offre de stage{" "}
+            <FontAwesomeIcon icon={faLevelDownAlt} />
           </h4>
-          <Badge variant="dark">Retour à la liste des demandes de stage</Badge>
+          <Nav.Link href="/espace-prive/offres-de-stage">
+            <Badge variant="dark" href="/espace-prive/offres-de-stage">
+              Retour à la liste des offres de stage
+            </Badge>
+          </Nav.Link>
         </div>
       </>
     );
@@ -187,9 +190,7 @@ class AjouterOffreDeStage extends React.Component {
         </Form.Group>
         <Form.Group>
           <Form.Label>Secteur d'activité</Form.Label>
-          <Form.Control as="select">
-            {renderSecteursActivites()}
-          </Form.Control>
+          <Form.Control as="select">{renderSecteursActivites()}</Form.Control>
         </Form.Group>
         <Form.Group>
           <Form.Label>Ville*</Form.Label>
@@ -282,7 +283,7 @@ class AjouterOffreDeStage extends React.Component {
         </Form.Group>
         <div className="float-right">
           <ButtonGroup size="sm" className="card-button">
-            <Button variant="light" className="mr-2">
+            <Button variant="light" className="mr-2" href="/espace-prive/offres-de-stage">
               Annuler
             </Button>
             <Button variant="info" type="submit" onClick={this.handleSubmit}>

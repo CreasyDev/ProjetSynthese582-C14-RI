@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, ButtonGroup, Button, Form } from "react-bootstrap";
+import { Badge, ButtonGroup, Button, Form, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLevelDownAlt } from "@fortawesome/free-solid-svg-icons";
 import FormInputFeedBackControl from "../../../components/FormInputFeedBackControl";
@@ -108,10 +108,14 @@ class AjouterDemandeDeStage extends React.Component {
       <>
         <div className="title">
           <h4>
-            Ajouter une demande de stage{" "}
+            Formulaire de demande de stage{" "}
             <FontAwesomeIcon icon={faLevelDownAlt} />
           </h4>
-          <Badge variant="dark">Retour à la liste des demandes de stage</Badge>
+          <Nav.Link href="/espace-prive/demandes-de-stage">
+            <Badge variant="dark">
+              Retour à la liste des demandes de stage
+            </Badge>
+          </Nav.Link>
         </div>
       </>
     );
@@ -262,7 +266,9 @@ class AjouterDemandeDeStage extends React.Component {
           <Form.Control as="select">
             <option value="oui">Oui</option>
             <option value="non">Non</option>
-            <option value="a-la-discretion-de-entreprise">À la discrétion de l'entreprise</option>
+            <option value="a-la-discretion-de-entreprise">
+              À la discrétion de l'entreprise
+            </option>
           </Form.Control>
         </Form.Group>
         <Form.Group>
@@ -287,7 +293,7 @@ class AjouterDemandeDeStage extends React.Component {
         </Form.Group>
         <div className="float-right">
           <ButtonGroup size="sm" className="card-button">
-            <Button variant="light" className="mr-2">
+            <Button variant="light" className="mr-2" href="/espace-prive/demandes-de-stage">
               Annuler
             </Button>
             <Button variant="info" type="submit" onClick={this.handleSubmit}>

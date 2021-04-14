@@ -812,14 +812,22 @@ h1 span {
   background-color: #317caf;
   left: 0;
   width: 20%;
+  display: block !important;
+}
+
+.side-menu .brand {
+  font-size: x-large;
+  margin-top: 25px;
 }
 
 .top-menu {
   background-color: #ffff;
   right: 0;
-  height: 50px;
+  top: 50px;
+  height: 67px;
   width: 80%;
-  padding-top: 8px;
+  padding-top: 21px;
+  z-index: 2;
 }
 
 .private-space-content-body {
@@ -831,7 +839,7 @@ h1 span {
 
 .private-space-container {
   padding-bottom: 100px;
-  padding-top: 20px;
+  padding-top: 85px;
 }
 
 .internal-intership-request-card-container {

@@ -19,8 +19,10 @@ function PrivateRouteManagement() {
           <Route exact path="/espace-prive" component={Accueil} />
           <Route path="/espace-prive/offres-de-stage" component={OffresDeStage} />
           <Route path="/espace-prive/ajouter-une-offre-de-stage" component={AjouterOffreDeStage} />
+          <Route path="/espace-prive/modifier-une-offre-de-stage/:id" component={AjouterOffreDeStage} />
           <Route path="/espace-prive/demandes-de-stage" component={DemandesDeStage} />
           <Route path="/espace-prive/ajouter-une-demande-de-stage" component={AjouterDemandeDeStage} />
+          <Route path="/espace-prive/modifier-une-demande-de-stage/:id" component={AjouterDemandeDeStage} />
           <Route path="/espace-prive/candidats" component={Candidats} />
           <Route path="/espace-prive/fiche-candidat/:id" component={FicheCandidat} />
           <Route path="/espace-prive/modifier-candidat/:id" component={ModificationFicheCandidat} />

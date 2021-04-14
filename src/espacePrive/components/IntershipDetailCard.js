@@ -64,7 +64,16 @@ const OfferCard = ({ offer = undefined, type = "offre" }) => {
               </Button>
             </ButtonGroup>
             <ButtonGroup className="mr-2 float-right">
-              <Button variant="light" className="mr-3" size="sm">
+              <Button
+                variant="light"
+                className="mr-3"
+                size="sm"
+                href={`/espace-prive/${
+                  offer.type === "demande"
+                    ? "modifier-une-demande-de-stage"
+                    : "modifier-une-offre-de-stage"
+                }/${offer.id}`}
+              >
                 <FontAwesomeIcon icon={faEdit} color="green" /> Modifier
               </Button>
               <Button variant="light" size="sm">

@@ -4,7 +4,7 @@ import { Navbar, Nav, Button } from "react-bootstrap";
 function Menu() {
   return (
     <Navbar expand="sm" className="full-content side-menu">
-      <Navbar.Brand href="/">eStage</Navbar.Brand>
+      <Navbar.Brand href="/" className="brand">eStage</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse>
         <Nav defaultActiveKey="/espace-prive" className="flex-column">
@@ -28,7 +28,7 @@ function Menu() {
             <Nav.Link href="/espace-prive/entreprises">Entreprises</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/espace-prive/entreprises">Modifier mes infos</Nav.Link>
+            <Nav.Link href="/espace-prive/modifier-infos">Modifier mes infos</Nav.Link>
           </Nav.Item>
           <br /><br />
           <Nav.Item>
