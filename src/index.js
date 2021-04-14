@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './styles/index.scss';
-import 'react-toastify/dist/ReactToastify.css';
+//import 'react-toastify/dist/ReactToastify.css';
 import App from './App';
 //import EspacePriveApp from './espacePrive/App';
 import reportWebVitals from './reportWebVitals';
